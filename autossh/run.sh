@@ -80,7 +80,7 @@ COMMAND="/usr/bin/autossh "\
 "-o ServerAliveInterval=30 "\
 "-o ServerAliveCountMax=3 "\
 "-o StrictHostKeyChecking=no "\
-"-o ExitOnForwardFailure=no "\
+"-o ExitOnForwardFailure=yes "\
 "-p ${SSH_PORT} -t -t "\
 "-i ${KEY_PATH}/autossh_rsa_key "\
 "${USERNAME}@${HOSTNAME}"
